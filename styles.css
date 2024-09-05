@@ -16,6 +16,8 @@
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
+
+  
   
   
   .loader_bg {
@@ -149,10 +151,13 @@
   .navbar .menu li {
     list-style: none;
     display: inline-block;
+    
+
   }
   
   .navbar .menu li a {
-    display: block;
+    display: inline-block;
+    margin-right: 30px;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -161,11 +166,16 @@
   }
   
   .navbar .menu li a:hover {
-    color: #1e3551;
+    
+    color: rgb(79, 129, 151);
+   
+    
+    
+    text-decoration:dotted underline;
   }
   
   .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: #b17070;
   }
   
   /*  Menu Btn  */
@@ -264,6 +274,7 @@
     border: 2px solid #1e3551;
     transition: all 0.3s ease;
   }
+ 
   
   .home .home-content a:hover {
     color: #1e3551;
@@ -957,3 +968,48 @@
       line-height: 38px;
     }
   }
+ .imageg{
+  height: 400px;
+  width: 400px;
+  border: 8px solid rgb(13, 54, 132);
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  right: 110px;
+  top: 180px;
+  background-image:url("images/gimg.jpg") ;
+  background-size:cover;
+  animation: branimate 4s ease-in-out 0s infinite alternate-reverse;
+  /* animation: bbranimate 5s ease-in 0s infinite reverse; */
+ }
+
+ @keyframes branimate{
+  from{
+      border: 8px solid rgb(83, 147, 226);
+  }
+  to{
+    
+    border: 8px solid rgb(206, 86, 86) ;
+    
+  }
+  }/*
+ @keyframes bbranimate{
+  from{
+      border: 8px solid rgb(13, 54, 132);
+  }
+  to{
+    
+    border: 8px solid purple;
+    
+  }
+ } */
+
+ .nm{
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(249, 242, 242);
+ }
+ .nm a:hover{
+  color: rgb(140, 64, 64);
+  text-decoration: dashed underline;
+ }
